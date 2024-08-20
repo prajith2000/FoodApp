@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('https://bluemoonthaicafe.com/wp-content/uploads/2020/04/italian-food-background-1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+  color: red;
+}
+
+.App {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  background-color: lightgreen;
+}
+
+.navbar-brand {
+  color: black;
+  font-size: 24px;
+  margin: 0;
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: none;
+}
+
+.search-button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover {
+  background-color: darkblue;
+}
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+  padding: 20px;
+}
+
+.recipe {
+  background-color: lightgreen;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Add Zoom In and Out Styles */
+.recipe:hover {
+  transform: scale(1.1);
+  z-index: 10;
+}
+
+.recipe img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.recipe h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.recipe ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.recipe ul li {
+  margin-bottom: 5px;
+}
+
+/* Adjust the box shadow on hover */
+.recipe:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
